@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<Form action="" method="POST">
+    {% csrf_token %}
+    <div class="mb-3" style="width: 18rem;">
+      <label for="exampleInputText1" class="form-label">Username</label>
+      <input type="text" class="form-control" name="username">
+    </div>
+    <div class="mb-3" style="width: 18rem;">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1", name="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Ok</button>
+    <span><a href="http://127.0.0.1:8000/reg/">Регистрация</a></span>
+  </Form>
+{% endblock %}

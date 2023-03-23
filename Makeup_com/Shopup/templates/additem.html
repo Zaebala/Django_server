@@ -1,0 +1,29 @@
+{% extends 'index.html' %}
+
+{% block body %}
+<Form action="" method="post">
+  {% csrf_token %}
+  <div class="mb-3" style="width: 18rem;">
+    <label for="exampleInputText1" class="form-label">Название</label>
+    <input type="text" class="form-control" id="exampleInputText1" name = "name">
+  </div>
+  <div class="mb-3" style="width: 18rem;">
+    <label for="exampleInputText5" class="form-label">Брэнд</label>
+    <input type="text" class="form-control" id="exampleInputText2" name="brand">
+  </div>
+  <div class="mb-3" style="width: 18rem;">
+    <label for="exampleInputText4" class="form-label">Обьем</label>
+    <input type="text" class="form-control" id="exampleInputText2" name="volume">
+  </div>
+  <div class="mb-3" style="width: 18rem;">
+    <label for="exampleInputText2" class="form-label">Описание</label>
+    <input type="text" class="form-control" id="exampleInputText2"name="info">
+  </div>
+  <div class="mb-3" style="width: 18rem;">
+    <label for="exampleInputText3" class="form-label">Цена</label>
+    <input type="text" class="form-control" id="exampleInputText2" name="price">
+  </div>
+  
+  <a href=""><button type="submit" class="btn btn-primary">Подтвердить</button></a>
+</Form>
+{% endblock %}
